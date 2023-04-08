@@ -1,0 +1,214 @@
+
+
+  
+  .carousel-card {
+    width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito Sans", sans-serif;
+
+    
+  }
+  
+  .carousel-card .box {
+    width:340px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:400px) {
+  .carousel-card .box{
+    width: 240px;
+  }
+}
+  
+  .carousel-card .box .top {
+    position: relative;
+    /* background-color: red; */
+  }
+  
+  .carousel-card .box .top:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 39, 38, 0.829);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .carousel-card .box .top:hover:before {
+    opacity: 1;
+  }
+  
+  .carousel-card .box .top:after {
+    content: "View Property";
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .carousel-card .box .top:hover:after {
+    opacity: 1;
+  }
+  
+  .carousel-card .box .top img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+  
+  .carousel-card .box .top span {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .carousel-card .box .top span i {
+    margin-left: 5px;
+  }
+  
+  .card-address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    bottom: 20px;
+    color: #fff;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70% );
+  }
+  .carousel-card .box .bottom {
+    padding: 20px 15px ;
+    padding-top: unset;
+    position: relative;
+  }
+  
+  .carousel-card .box:not(:last-of-type) .bottom:before {
+    content: "Hot";
+    background-color: #ea723d;
+    color: white;
+    font-size: 11px;
+    padding: 4px 7px;
+    position: absolute;
+    left: 20px;
+    top: -40px;
+    z-index: 1;
+  }
+  
+  .carousel-card .box .bottom h3 {
+    font-size: 15px;
+  }
+  
+  .carousel-card .box .bottom > p {
+    margin: 15px 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #777;
+  }
+  
+  .carousel-card .box .bottom .advants {
+    display: flex;
+  }
+  
+  .carousel-card .box .bottom .advants > div {
+    margin-right: 15px;
+  }
+  
+  .carousel-card .box .bottom .advants > div > span {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .carousel-card .box .bottom .advants > div > div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-card .box .bottom .advants > div > div i {
+    color: #777;
+    font-size: 22px;
+  }
+  
+  .carousel-card .box .bottom .advants > div > div > span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .carousel-card .box .bottom .advants > div > div > span > span {
+    color: #777;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  
+  /* .carousel-card .box .bottom .price {
+    margin-top: 20px;
+  }
+   */
+  .carousel-card .box .bottom .price span:first-of-type {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background: #cf1216;
+    color: white;
+    width: 60px;
+    height: 21px;
+    text-align: center;
+    position: relative;
+    bottom: 235px;
+    left: 260px;
+    
+  }
+  
+  .carousel-card .box .bottom .price span:last-of-type {
+    color: #3eaba1;
+    font-size: 22px;
+  }
+  
+.card-agent{
+  display: flex;
+  font-size: 10px;
+  gap: 15px;
+  margin-top: 15px;
+}
+  .card-agent img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .card-agent-cred h5{
+font-size: 13px;
+
+  }
+
+  .BrainhubCarousel__arrows{
+    background-color: #cf1216 !important;
+  }
+
+  .BrainhubCarousel__arrows:disabled{
+    background-color: #ccc !important;
+  }
+  
+  .carousel-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'nunito sans', sans-serif;
+    font-size: 30px;
+  }
